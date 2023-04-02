@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de Nacionaliade</h1>
+    <p>Digite aqui sua Nacionalidade(BR ou EUA)</p>
+    <input type="text" name="nacio" id="nacio">
+    <input type="button" value="Conferir" onClick="conferir()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function conferir() {
+            var pais = document.getElementById("nacio")
+            var res = document.getElementById("res")
+
+            if (pais.value == "br") {
+            document.getElementById("res").innerHTML = "Brasileiro"
+            }
+
+            else if (pais.value == "eua"){
+            document.getElementById("res").innerHTML = "Estadunidense"
+            }
+
+            else {
+                document.getElementById("res").innerHTML = "Opção invalida, escreva apenas EUA ou BR!!!"
+            }
+
+            }
+    </script>
+</body>
+</html>

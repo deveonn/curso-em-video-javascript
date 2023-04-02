@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(64, 192, 243);
+            color:white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <!--Abaixo um script para manipular um ou mais elementos da arvore DOM usando getElementsByName-->
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[1] 
+        
+        window.document.write('- Usando window.document.write(p1.innerText): ' + p1.innerText)//innerText é o texto que está dentro do elemento p1, porem não pega a formatação de html
+
+        window.document.write(p1.innerHTML) //innerHTML vai exibir além do texto a formatação também
+
+        //em resumo, a var p1 é definida pelo window.document.getElementsByName('p')[0]
+
+        p1.style.color = 'yellow' //esta linha pode trocar a cor da fonte da variavel p1
+
+        var corpo = window.document.body //aqui definimos o que corpo vai pegar da arvore DOM, e baixo usando o que pegamos e definimos, dizemos para mudar a cor usando .style
+        corpo.style.background = "Black"
+
+    </script>
+</body>
+</html>

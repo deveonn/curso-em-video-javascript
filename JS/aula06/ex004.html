@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20px Sans-Serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é seu nome')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`) // document.write faz aparecer no documento a variavel nome, também vai exibir o numero de caracteres por conta do atribubo .length na variavel 'nome'
+        document.write(`Seu nome em mauisculas: ${nome.toUpperCase()}. `) // vai exibir no documento a variavel 'nome' em MAIUSCULAS
+        document.write(`Seu nome em minúsculas: ${nome.toLowerCase()}. `) // vai exibir no documento a variavel 'nome' em minusculas
+
+    </script>
+</body>
+</html>
